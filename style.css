@@ -55,14 +55,59 @@ table {
 
 body {
 	background-color: #f2f2f2;
+	font-family: Helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #555;
+}
+
+.top-bar {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	padding: 12px 0;
+	z-index: 1000;
+	height: 50px;
+	box-shadow: 0 4px 4px #999, 0 1px 3px #999 inset;
+	background: linear-gradient(#f2f2f2, #bbb);
+	transition: .2s;
+}
+.top-bar:hover {
+	box-shadow: 0 8px 10px #999;
+	transition: .3s;
+}
+.header {
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 2px white;
+}
+.header-by {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: #777;
+}
+@media (max-width: 490px) {
+	.top-bar {
+		padding: 16px 0;
+	}
+	.header {
+		font-size: 20px;
+		letter-spacing: normal;
+	}
+	.header-by {
+		font-size: 16px;
+	}
 }
 
 .wrapper {
-	padding: 50px 40px;
+	padding: 90px 40px;
 }
 
 .cards-container {
-  /*margin: -2% -2% 0;*/
+  margin: -2% -2% 0;
 }
 
 .photo-card {
